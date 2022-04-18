@@ -1,0 +1,54 @@
+.container{
+	position: relative;
+	left: 45vw;
+	top: 40vh;
+}
+
+
+.widget-1 {
+	background: #55a8fd;
+	color: #fff;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  animation-name: example;
+  animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	border-radius: 10%;
+
+}
+
+@keyframes example {
+	0%   {background-color: red;border-radius: 20%;}
+25%  {background-color: yellow;border-radius: 40%;}
+50%  {background-color: blue;border-radius: 60%;}
+100% {background-color: green;border-radius: 100%;}
+}
+
+@media only screen and (min-width::500px) {
+	.container{
+		position: relative;
+	  left: 45vw;
+		top: 40vh;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.container{
+		position: relative;
+	  left: 45vw;
+		top: 40vh;
+	}
+}
+
+@media only screen and (width:800px) {
+	.container{
+		position: relative;
+	  left: 45vw;
+		top: 40vh;
+	}
+}
